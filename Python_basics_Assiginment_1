@@ -1,0 +1,67 @@
+1. In the below elements which of them are values or an expression? eg:- values can be
+integer or string and expressions will be mathematical operators.
+*  -> It is an expression
+hello -> It is a value 
+-87.8  It is a value 
+-  -> It is an expression
+/  -> It is an expression
++  -> It is an expression
+6  -> It is a value 
+
+2. What is the difference between string and variable?
+strings are type of data which can be stored in a variable and are enclosed in quotes ex = "Hello world"
+and variables are a type of named container to store string values ex = First_prg = "hello world" where First_prg is a container or variable to store string.
+
+
+3. Describe three different data types.
+
+Sequence type = example = String,list, Tuple
+Numeric data type =  example = float,int,complex
+Boolean =   example = Bool  Bool data type consists of True or false.
+
+4. What is an expression made up of? What do all expressions do?
+expressions contain values which can be int,float,numbers, string ext
+also can contain variables to strore data 
+operators to perform mathematical operation which consists of arithmetic logical and comparision operators
+expressions can -
+assigin value to a variable 
+can perform mathematical operation 
+can compare  given values
+perform logical operations
+return or print data as a form of output.
+
+
+5. This assignment statements, like spam = 10. What is the difference between an
+expression and a statement?
+spam = 10 is a statement as it the value 10 is assigined to spam and  does not return a value 
+an expression is a code which returns a value after evaluation on the other hand does not get evaluated for results
+
+6. After running the following code, what does the variable bacon contain?
+bacon = 22
+bacon + 1
+the variable bacon contains - bacon = 22
+
+7. What should the values of the following two terms be?
+spam + spamspam 
+spam * 3
+if considered both are strings and both are enclosed in quotes the return value would be as follows
+spam + spamspam - spamspamspam
+spam * 3  - spamspamspam
+
+8. Why is eggs a valid variable name while 100 is invalid?
+eggs is considered as a variable because in python variable name should start with a letter.
+in python variable names can start with a letter followed by letters or number or underscores
+on the other hand 100 it starts from a number which is not accepted as a variable.
+
+9. What three functions can be used to get the integer, floating-point number, or string
+version of a value?
+1.str() it is used to convert a value to a string ex - str(10) will be converted to "10"
+2. int() it is used to convert a value to integer ex - int(10.2) will be converted to 3
+3. float() it is used to convert a value to float ex - float(10) will be convered to 10.0
+
+
+10. Why does this expression cause an error? How can you fix it?
+I have eaten  + 99 +  burritos.
+this expression causes an error because 99 is an integer, we cannot add  two diffrent data types in python we have to convert 99 from int to a str
+fixed code - I have eaten  + str(99) +  burritos.
+
