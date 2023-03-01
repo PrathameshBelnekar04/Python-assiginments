@@ -1,14 +1,21 @@
 1. What does an empty dictionarys code look like?
 ans = 
 dict = {}
+
+
+
 2. What is the value of a dictionary value with the key 'foo' and the value 42?
 ans = 
 my_dict = {'foo':42}
+
+
 
 3. What is the most significant distinction between a dictionary and a list?
 ans = 
 list = items in list are ordered.
 dictonary = dictonary consists of key, value pairs which are unordered 
+
+
 
 4. What happens if you try to access spam['foo'] if spam is {'bar': 100}?
 ans = it will give a key error 
@@ -16,7 +23,14 @@ ans = it will give a key error
 
 5. If a dictionary is stored in spam, what is the difference between the expressions 'cat' in spam and 'cat' in spam.keys()?
 ans = 
+there is no difference the in operator checks whether a value exists as a key in the dictionary
+
+
 6. If a dictionary is stored in spam, what is the difference between the expressions 'cat' in spam and 'cat' in spam.values()?
+ans = 
+'cat' in spam checks whether there is a 'cat' key in the dictionary while 'cat' in spam.values() 
+checks whether there is a value 'cat' for one of the keys in spam
+
 7. What is a shortcut for the following code?
 if 'color' not in spam:
 spam['color'] = 'black'
@@ -30,4 +44,12 @@ print(spam)
 ans = 
 
 import pprint
-dict1 = {"apple": "red" }
+dict1 = {'apple':'red',
+      'age': 31,
+    'gender': 'male',
+    'name': 'prathamesh'}
+    
+
+pprint.pprint(dict1)
+    
+   
