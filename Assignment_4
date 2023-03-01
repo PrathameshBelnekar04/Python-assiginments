@@ -1,0 +1,82 @@
+1. What exactly is []?
+ans =  [] - refers to an empty list
+
+
+2. In a list of values stored in a variable called spam, how would you assign the value hello as the
+third value? (Assume [2, 4, 6, 8, 10] are in spam.)
+ans = 
+spam = [2, 4, 6, 8, 10]
+spam[2] = 'hello'
+print(spam)
+
+Lets pretend the spam includes the list ['a', 'b','c','d'] for the next three queries.
+3. What is the value of spam[int(int('3' * 2) / 11)]?
+ans = 'd'
+
+4. What is the value of spam[-1]?
+ans = 'd'
+
+5. What is the value of spam[:2]?
+ans = ['a', 'b']
+
+Let's pretend bacon has the list [3.14, 'cat' 11, 'cat' True] for the next three questions.*
+
+6. What is the value of bacon.index('cat')?
+ans = 1
+
+7. How does bacon.append(99) change the look of the list value in bacon?
+ans = [3.14, 'cat', 11, 'cat', True, 99]
+
+8. How does bacon.remove('cat') change the look of the list in bacon?
+ans = [3.14, 11, 'cat', True]
+
+9. What are the list concatenation and list replication operators?
+ans = 
+'*' is a list replication operator.
+'+' is a list concatenation operator.
+
+
+10. What is difference between the list methods append() and insert()?
+ans = append() method enters the value at the end of the given list and insert() method we can insert a value at the given index value 
+it will insert the element in that index location.
+
+11. What are the two methods for removing items from a list?
+ans = remove() - removes the first item from the list 
+and pop() - removes and returns the last value from the list 
+
+
+12. Describe how list values and string values are identical.
+ans = 
+1- we can iterate over a list and even in string using for loop
+2- we can use index for slicing
+3-
+
+13. Whats the difference between tuples and lists?
+ans = list uses [] brackets,  lists are mutable data type,  we can add remove or update items in a list.
+tuples are immutable and used () brackets we cannot change the values in it 
+
+14. How do you type a tuple value that only contains the integer 42?
+ans = (42,)
+15. How do you get a list values tuple form? How do you get a tuple values list form?
+ans = list = [1,2]
+tup = tuple(list)
+print(tup)
+
+tup = (1,2)
+lst = list[list]
+print(lst)
+
+
+
+16. Variables that contain list values are not necessarily lists themselves. Instead, what do they
+contain?
+ans = variables contain refrences to list values
+
+
+17. How do you distinguish between copy.copy() and copy.deepcopy()?
+
+ans = 
+
+copy.copy() create reference to original object. If you change copied object you change the original object copy.deepcopy() 
+creates new object and does real copying of original object to new one
+Changing new deepcopied object doesn't affect original object
