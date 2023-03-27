@@ -1,0 +1,48 @@
+1. What are escape characters, and how do you use them?
+Ans - Escape characters can be classified as non-printable characters when backslash precedes them. 
+The print statements do not print escape characters.
+
+
+2. What do the escape characters n and t stand for?
+Ans -  \n is for new line  and \t is for Horizontal Tab
+
+
+3. What is the way to include backslash characters in a string?
+Ans - f you want to add a backslash into a string, you will need to add double backslashes.
+The first one will escape the second one, which will result in a single backslash in your string.   
+
+4. The string &quot;Howl&#39;s Moving Castle&quot; is a correct value. Why isn&#39;t the single quote character in the
+word Howl&#39;s not escaped a problem?
+Ans - the singlequote has not created a problem because double quotes are used in the start and in the end of the string.
+
+5. How do you write a string of newlines if you dont want to use the n character?
+Ans - os.linesep from the os module can be used for the same 
+eg - import os 
+words = 'Line_one'+ os.linesep + 'Line_two'
+print(keyword)
+
+6. What are the values of the given expressions?
+'Hello, world!'[1]    =      e
+'Hello, world!'[0:5]    =    Hello
+'Hello, world!'[:5]     =    Hello
+'Hello, world!'[3:]      =   lo, world!
+
+7. What are the values of the following expressions?
+'Hello'.upper()            = HELLO
+'Hello'.upper().isupper()   = True
+'Hello'.upper().lower()    = hello
+
+
+8. What are the values of the following expressions?
+'Remember, remember, the fifth of July.'.split()
+Ans =  ['Remember,', 'remember,', 'the', 'fifth', 'of', 'July.']
+
+'-'.join('There can only one.'.split())
+Ans  = There-can-only-one.
+
+9. What are the methods for right-justifying, left-justifying, and centering a string?
+Ans =  rjust() is used for right-justifying, ljust() is used for  left-justifying and center() is used for centering a string
+
+
+10. What is the best way to remove whitespace characters from the start or end?
+Ans = .strip() method is used to remove whitespace characters from the start or end of the string.
