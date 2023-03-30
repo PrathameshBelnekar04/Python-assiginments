@@ -1,0 +1,29 @@
+1. To what does a relative path refer?
+Ans = A relative path in Python is a path that describes the location of a directory relative to the entry point where you run the Python script
+
+2. What does an absolute path start with your operating system?
+Ans = as i am using the windows machine the absolute path starts with C:\ . 
+
+3. What do the functions os.getcwd() and os.chdir() do?
+Ans = the function os.getcwd()  is used to get the current working directory and os.chdir() is used to change the current working directory to a specified path
+
+4. What are the . and .. folders?
+The . is the current directory, while .. signifies the parent directory of the current directory.
+
+5. In C:\bacon\eggs\spam.txt, which part is the dir name, and which part is the base name?
+Ans = C:\bacon\eggs is the dir name and  spam.txt is the base name.
+
+6. What are the three “mode” arguments that can be passed to the open() function?
+Ans = 'r' , 'w' , 'a'
+'r' is used for reading a file which is default 
+'w' is used to open file for writing, Creates a new file if it does not exist or truncates the file if it exists.
+'a' is used to open for appending at the end of the file without truncating it. Creates a new file if it does not exist
+
+7. What happens if an existing file is opened in write mode?
+Ans = If the file to be opened exists in the current directory and is open using 'w' mode the contents will be deleted before writing
+
+8. How do you tell the difference between read() and readlines()?
+the read() reads the entire file content all at once, while the readlines() returns a list of lines.
+
+9. What data structure does a shelf value resemble?
+Ans = A shelf value resembles a dictionary  structure as key and value pair 
