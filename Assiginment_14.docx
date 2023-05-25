@@ -8,11 +8,62 @@ and the string 'RGBA' as its second argument, and it returns an RGBA tuple.
 
 3. What is a box tuple, and how does it work?
 Ans = 
+A box.tuple is similar to a regular tuple in Python but with some additional features provided by the box library. 
+pip install box
+from box import Box
+my_tuple = Box(1, 2, 3)  # Creating a box.tuple
+You can access individual elements of a box.tuple using indexing, similar to regular tuples:
+print(my_tuple[0])
+
+
 4. Use your image and load in notebook then, How can you find out the width and height of an
 Image object?
+Ans = 
+To find out the width and height of an Image object in a Jupyter Notebook using Python, 
+you can utilize the PIL (Python Imaging Library)
+
+from PIL import Image
+import requests
+from io import BytesIO
+
+#Load the image from a URL or local file
+url = "https://example.com/image.jpg"
+response = requests.get(url)
+image = Image.open(BytesIO(response.content))
+
+# Get the width and height of the image
+width, height = image.size
+
+# Print the width and height
+print("Width:", width)
+print("Height:", height)
+
 5. What method would you call to get Image object for a 100×100 image, excluding the lower-left
 quarter of it?
+Ans = 
+the crop() method is used to extract the desired portion of the image. The parameters (0, 50, 50, 100)
+indicate the region to be cropped, where (left, upper, right, lower) represents the coordinates of the bounding box.
+After cropping, you can optionally use the resize() method
+to resize the cropped image to a specific size, such as 100x100 pixels.
+Finally, you can choose to either display the resulting
+cropped image using show() or save it to a file using save()
+
 6. After making changes to an Image object, how could you save it as an image file?
+Ans = To save an updated or modified Image object as an image file using the PIL 
+(Python Imaging Library) or its fork, Pillow,
+you can use the save() method.
+
 7. What module contains Pillow’s shape-drawing code?
+ans = 
+Pillow's shape-drawing code is part of the ImageDraw module within the Pillow library
+The ImageDraw module provides functionality for 
+drawing shapes, lines, and text on an Image object.
+
 8. Image objects do not have drawing methods. What kind of object does? How do you get this kind
 of object?
+Ans = Image objects in Pillow do not have built-in drawing methods
+Instead, the drawing methods are provided by the ImageDraw object
+which is obtained from the ImageDraw module
+
+To get an ImageDraw object, you need to create it by calling the
+ImageDraw.Draw() function and passing the Image object as an argument.
